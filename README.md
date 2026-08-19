@@ -87,13 +87,13 @@ curl -u supervisor:super123 http://localhost:8080/api/camiones
 
 ```
 src/main/java/com/empresa/xyz/
- ├── XyzApplication.java                (ya existía)
- ├── config/SecurityConfig.java         (Basic Auth + roles + filter chain)
+ ├── XyzApplication.java               
+ ├── config/SecurityConfig.java         
  ├── model/Camion.java
  ├── model/Conductor.java
  ├── repository/CamionRepository.java
  ├── repository/ConductorRepository.java
  └── controller/CamionController.java
  └── controller/ConductorController.java
-src/main/resources/application.properties  (se agregó config de H2/JPA)
+src/main/resources/application.properties  
 ```
