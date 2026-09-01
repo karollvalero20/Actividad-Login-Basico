@@ -17,8 +17,8 @@ la lógica de negocio solicitada.
 Como este proyecto usa Spring Boot 4.1.0, hay un par de cosas que cambiaron respecto a versiones 3.x
 y que ya están resueltas en el `pom.xml`:
 
-- `spring-boot-starter-web` fue reemplazado por `spring-boot-starter-webmvc` (ya lo trae tu proyecto).
-- La consola H2 ya no viene incluida por defecto: se necesita el módulo `spring-boot-h2console` (ya lo trae tu proyecto).
+- `spring-boot-starter-web` fue reemplazado por `spring-boot-starter-webmvc`
+- La consola H2 ya no viene incluida por defecto: se necesita el módulo `spring-boot-h2console` 
 - La validación (`@Valid`, `@NotBlank`, etc.) ya no viene incluida en el starter web: se agregó `spring-boot-starter-validation`.
 - CSRF ahora viene habilitado por defecto también para APIs REST. Como esta API es *stateless* (Basic Auth, sin sesión), se desactiva explícitamente en `SecurityConfig`.
 
